@@ -32,12 +32,16 @@
     transition: transform 0.15s linear
     cursor: pointer
     &:focus
-      outline: 2px dashed #17171D
+      border-color: blue
     &:hover
       transform: scale(1.1)
     &:active
       transform: none
     &.green
       background-color: green
+    &.green:active
+      background-color: darken(green, 10%)
     &.red
       background-color: red
+    &.red:active
+      background-color: darken(red, 10%)
